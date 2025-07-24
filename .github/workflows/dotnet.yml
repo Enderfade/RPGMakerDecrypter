@@ -24,6 +24,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release
-    - name: Test
-      run: dotnet publish --configuration Release --property:OutputPath=RPGMakerDecryptor/builds/
-  
+   # - name: Test
+      #run: dotnet publish --configuration Release #--property:OutputPath=RPGMakerDecryptor/builds/
+    - name: AttemptToPublish
+      run: dotnet nuget push RPGMakerDecrypter/bin/Release/*.nupkg
