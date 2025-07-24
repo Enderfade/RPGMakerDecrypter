@@ -30,4 +30,4 @@ jobs:
    # - name: Test
       #run: dotnet publish --configuration Release #--property:OutputPath=RPGMakerDecryptor/builds/
     - name: AttemptToPublish
-      run: dotnet nuget push <my project>/bin/Release/*.nupkg
+      run: dotnet nuget push Enderfade/RPGMakerDecrypter/bin/Release/*.nupkg
